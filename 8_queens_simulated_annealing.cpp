@@ -16,7 +16,7 @@ using namespace std;
 
 /*
 
-    State --> this represents a board position, and the ability to randomly move
+    State --> An instantiation of this class represents a board position, and provides ability to randomly move
                 one of the queens from it's position, yielding a new state.
                 
                 This class also provides static functions to generate a random starting
