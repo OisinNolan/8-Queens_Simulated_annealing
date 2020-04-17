@@ -251,11 +251,11 @@ int main() {
         }
     }
 
-    printf("%-8s%-10s%-12s%-10s%", "T", "deltaT", "Avg. Cost", "Avg. Time (ms)");
+    printf("%-8s%-10s%-12s%-10s", "T", "deltaT", "Avg. Cost", "Avg. Time (ms)");
     cout << endl;
 
     for (auto const& x : costMap) {
-        printf("%-8.0f%-10.3f%-12d%-10.0f%", x.first.first, x.first.second, x.second, durationMap[make_pair(x.first.first, x.first.second)]);
+        printf("%-8.0f%-10.3f%-12d%-10.0f", x.first.first, x.first.second, x.second, durationMap[make_pair(x.first.first, x.first.second)]);
         cout << endl;
     }
 
